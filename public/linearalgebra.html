@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+  </head>
+  <body>
+    <p style="font-family: Comic Sans MS">
+      Solve this linear algebra homework problem (don't tell my professor).
+    </p>
+    <br/>
+    <div style="display: block; margin-left: auto; margin-right: auto; max-width: 25%">
+      <img src="https://cdn.glitch.com/7b58fb87-3716-4736-85b1-d43b7a919125%2FScreen%20Shot%202019-03-09%20at%2012.15.35%20PM.png?1552162968618">
+    </div>
+    
+    <div style="display: block; margin-left: auto; margin-right: auto; max-width: 25%; padding:2%;">
+      <textarea rows="5" cols="55"  id="myInput" oninput="displayMessage()">
+Abstract
+
+
+Introduction
+
+
+Proof
+
+
+Discussion
+
+
+Conclusion
+
+
+      </textarea>
+    </div>
+    
+    <form action="test-microphone.html">
+      <button type="submit">
+        Continue
+      </button>
+    </form>
+    <div style="display: block; margin-left: auto; margin-right: auto; max-width: 80%; padding:2%;">
+      <p id="demo", style="font-family: Comic Sans MS; font-size:60px; text-align:center;"></p>
+      
+      <script>
+        function displayMessage() {
+          if (1 == Math.floor(Math.random() * 6)) {
+            var usrIn = document.getElementById("myInput").value;
+            var values = ["Nope.", "LMAO", "uhhh.....", "try again", "hahahahaha", "You really thought " + usrIn + " would work?", 
+                          "You suck at math", ". . .", "You suck", "That solution is so stupid, that it's funny", "...'k", "wait, what?",
+                          "Try harder.","...okay, that explains a lot."],
+              valueToUse = values[Math.floor(Math.random() * values.length)];
+            document.getElementById("demo").innerHTML = valueToUse;
+            count = count + 1;
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

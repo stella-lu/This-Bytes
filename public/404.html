@@ -1,0 +1,122 @@
+<head>
+  <title>HTTP 404 Not Found - Microsoft Internet Explorer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <link rel="stylesheet" href="/style.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <style>
+        body {
+            font-family:sans-serif;
+            
+        }
+      td {
+        font-size: 12px;
+      }
+      a {
+        color: red;
+        text-decoration: underline;
+      }
+      canvas{
+        position:fixed;
+        width:100%;
+      }
+    </style>
+</head>
+<body>
+  <canvas width="100%" height="100%"></canvas>
+  <table width="730" cellpadding="0" cellspacing="0" border="0">
+        <!-- Error title -->
+            <tr>
+                <td id="infoIconAlign" width="60" align="left" valign="top" rowspan="2">
+                    <img src="https://cdn.glitch.com/7b58fb87-3716-4736-85b1-d43b7a919125%2F404icon.png?1552245528741" id="infoIcon">
+                </td>
+                <td id="mainTitleAlign" valign="middle" align="left" width="*">
+                    <h1 id="mainTitle">The webpage cannot be found</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- This row is for HTTP status code, as well as the divider-->
+                <td id="http404Align" class="errorCodeAndDivider" align="right"><ID id="http404">&nbsp;HTTP 404</ID>
+                    <div class="divider" style="border-bottom: #B6BCC6 1px solid"></div>
+                </td>
+            </tr>
+
+        <!-- Error Body -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="likelyCausesAlign" valign="top" align="left">
+                    <h3 id="likelyCauses">Most likely causes:</h3>
+                    <ul>
+                        <li id="causeErrorInAddress">There might be a typing error in the address.</li>
+                        <li id="causeLinkOutOfDate">If you clicked on a link, it may be out of date.</li>
+                    </ul>
+                </td>
+            </tr>
+
+        <!-- What you can do -->
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td id="whatToTryAlign" valign="top" align="left">
+                    <p id="whatToTry">Please try the following:<br><br></p>
+                </td>
+            </tr>
+
+        <!-- retype address -->
+            <tr>
+              <td>
+                    &nbsp;
+                </td>
+                <td>
+                  <ul>
+                    <li>If you typed the page address in the Address bar, make sure that it is spelled correctly</li>
+                    <li>Open the <a>htdp.apache.org</a> homepage, and then look for links to the information you want</li>
+                    <li>Click the <a>Back</a> button to try another link</li>
+                    <li>Click <a>Search</a> to look for information on the internet</li>
+                  </ul>
+              </td>
+            </tr>
+
+        <!-- InfoBlock -->
+            <tr>
+                <td id="infoBlockAlign" align="right" valign="top">
+                    &nbsp;
+                </td>
+                <td id="moreInfoAlign" align="left" valign="middle">
+                    <h4>
+                      <table>
+                        <tr>
+                            <td valign="top">
+                                <a href="#" onclick="javascript:expandCollapse('infoBlockID', true); return false;"><img src="down.png" id="infoBlockIDImage" border="0" class="actionIcon" alt="More information"></a>
+                            </td>
+                            <td valign="top">
+                               <span id="moreInfoContainer"></span>
+                               <noscript><ID id="moreInformation">More information</ID></noscript>
+                            </td>
+                        </tr>
+                      </table>
+                    </h4>
+
+                    <div id="infoBlockID" class="infoBlock">
+                        <p id="errorExplanation">This error (HTTP 404 Not Found) means that Internet Explorer was able to connect to the website, but the page you wanted was not found. It&rsquo;s possible that the webpage is temporarily unavailable. Alternatively, the website might have changed or removed the webpage.</p>
+                        <p id="moreInfoSeeHelp">For more information about HTTP errors, see Help.</p>
+                    </div>
+
+                </td>
+            </tr>
+
+
+        </table>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+<script>
+    //setTimeout(()=>{document.location='bsod.html'},10000);
+  // setTimeout(()=>{d3.select(window).on("mouseout",()=>{document.location='bsod.html'});},5000);
+  d3.select("canvas").on("mouseout",()=>{document.location='bsod.html'});
+  </script>
+</body>
