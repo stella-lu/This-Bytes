@@ -1,0 +1,305 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This Bytes Software Engineering Application [SATIRE]</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script>
+    var whiteboard = () => document.location='whiteboard.html';
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <h1>
+       This Bytes Application -- Fill out completely
+      </h1>
+      <h2>
+        Make your job search NP hard
+      </h2>
+      <h3>
+        Requirements
+      </h3>
+      <ul>
+        <li>10 years of Swift Experience</li>
+        <li>Rockstar ninja code slinger</li>
+        <li>Ph.D. in Computer Science and Discrete Logic</li>
+        <li>12 years dev ops for this UI role</li>
+        <li>15+ years Kotlin experience</li>
+        <li>No brilliant assholes</li>
+        <li>No pirates. We do everything legally</li>
+        <li>We expect you to work nights, weekends, with occasional unexpected international travel</li>
+        <li>2-3 years of industry experience for this junior, entry-level role</li>
+        <li>Willing to be co-founder and accept equity as payment if the opportunity is right</li>
+        <li>Will sponsor for H1-B Visa</li>
+      </ul>
+      <p>
+        All fields are <font color="red"><b>REQUIRED</b></font> If for some reason your mouse doesn't work, use the tab, shift+tab, and arrow keys to navigate.
+      </p>
+      <div class="glitchButton"></div>
+    </header>
+            <video id="stream" style="position:fixed; right: 0;" width="640" height="480"></video>
+            <canvas id="photo" width="640" height="480"> </canvas>
+    <main>
+      
+      <form onsubmit="whiteboard(); return false;">
+        <canvas id="cvs"></canvas>
+        <label>What college did you go to?</label>
+        <label for="Cal">U.C. Berkley</label> <input type="radio" name="college" id="Cal" value="berkley" />
+        <label for="MIT">MIT U</label> <input type="radio" id="MIT" name="college" value="mit"/>
+        <label for="CMU">Carnegie Mellon U</label><input type="radio" id="CMU" name="college" value="cmu"/>
+        <label for="Stanford">Stanford U</label><input type="radio" id="Stanford" name="college" value="stanford"/>
+        <label for="fuck-u">Fuck U</label><input type="radio" id="fuck-u" name="college" value="ur-fucked"/>
+        <label for="gpa">G.P.A.</label>
+        <select name="gpa" id="gpa">
+          <option value="5.0+">5.0+</option>
+          <option value="failure">failure</option>
+        </select>
+        <label for="Prefix">Prefix</label>
+        <select id="Prefix" name="Prefix">
+          <option default value="mr">Mr.</option>
+          <option value="miss">Miss</option>
+          <option disabled value="mrs">Mrs.</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="FirstName3">First 3 characters of First Name</label>
+        <input id="FirstName3" maxlength="3" name="FirstName6" type="text" />
+        <label for="FirstNameRest">Rest of First Name</label>
+        <input id="FirstNameRest" name="FirstNameRest" type="text" />
+        <label for="MiddleName">Middle Name</label>
+        <input id="MiddleName" name="MiddleName" type="text" />
+        <label for="LastName">Last Name</label>
+        <input id="LastName" name="LastName" type="text" />
+        <label for="Phone">Phone Number</label>
+        <input id="Phone" name="Phone" type="number"/>
+        <label for="Password">Password (Must be letters and shorter than 4 characters)</label>
+        <input type="text" id="password" name="password" dir="rtl" maxlength="4"/>
+        <label for="Immigration">Immigration Status</label>
+        <select id="Immigration">
+          <option>H1-B</option>
+          <option disabled>U.S. Citizen</option>
+          <option>Off-the-books</option>
+        </select>
+        <label for="SueUs"> 
+You have agreed to never sue us and pay all of our legal costs. We own all ip created by you, in perpetuity, before and after this agreement was signed</label>
+        <input type="checkbox" checked disabled/>
+        <label for="NotAge">We can't ask you your age <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ets2.12046">but want you to fail</a>, so, what year was your first undergraduate degree completed?</label>
+        <select id="NotAge">
+          <option disabled>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+        </select>
+        
+        <label for="date">Have you had a first date?</label>
+        
+        <label>No</label>
+        <input type="radio" id="date" name="date" value="false"/>
+        <label><b>Let us guess your gender, because we can't legally ask:</b></label>
+        <label>How do your colleagues describe your technical prowess?</label>
+  
+        <label for="prowess-ninja">Ninja</label>
+        <input type="radio" id="prowess-ninja" name="prowess" value="ninja" /> 
+         <label for="prowess-rockstar">Rockstar</label>
+        <input type="radio" id="prowess-rockstar" name="prowess" value="rockstar" />
+         <label for="prowess-pirate">Pirate</label>
+        <input type="radio" id="prowess-pirate" name="prowess"/>
+        
+                <label>What is your working philosophy?</label>
+  
+        <label for="philosophy-caffeine">Caffeine-fueled all-nighters</label>
+        <input type="radio" id="philosophy-caffeine" name="philosophy" value="caffeine" /> 
+         <label for="philosophy-pr-nightmare">blistering feedback on other people’s pull requests</label>
+        <input type="radio" id="philosophy-pr-nightmare" name="philosophy" value="rockstar" />
+         <label for="philosophy-us-vs-them">“us-against-them” approach to management</label>
+        <input type="radio" id="philosophy-us-vs-them" name="philosophy" value="us-vs-them"/>
+        
+        <label>What is your favorite pastime?</label>
+  
+        <label for="pastime-sports">Playing sports</label>
+        <input type="checkbox" id="pastime-sports" name="pastime" value="sports" /> 
+         <label for="pastime-trucks">drive trucks</label>
+        <input type="checkbox" id="pastime-trucks" name="pastime" value="trucks" />
+         <label for="pastime-dates">get lots of dates</label>
+        <input type="checkbox" id="pastime-dates" name="pastime"/>
+        
+        <label>How would your colleagues say you approach the challenges you face?</label>
+
+        <label for="challenge-hard">Hard</label>
+        <input type="radio" id="challenge-hard" name="challenge" value="hard" /> 
+         <label for="challenge-soft">Soft</label>
+        <input type="radio" id="challenge-soft" name="challenge" value="soft" />
+     
+        <label>In which way do you approach your challenges?</label>
+  
+        <label for="approach-logical">Logical</label>
+        <input type="radio" id="approach-logical" name="approach" value="logical" /> 
+         <label for="approach-emotional">emotional</label>
+        <input type="radio" id="approach-emotional" name="approach" value="emotional" />
+
+        <label>How do you prefer your code?</label>
+  
+        <label for="style-functional">Functional</label>
+        <input type="radio" id="style-functional" name="style" value="functional" /> 
+         <label for="style-pretty">Pretty</label>
+        <input type="radio" id="style-pretty" name="style" value="pretty" />
+
+        <label>When playing ping pong with your colleagues, are you:</label>
+  
+        <label for="pong-competitive">Competitive</label>
+        <input type="radio" id="pong-competitive" name="pong" value="competitive" /> 
+         <label for="pong-cooperative">Cooperative</label>
+        <input type="radio" id="pong-cooperative" name="pong" value="cooperative" />
+
+        <label>How do you solve your coding problem?</label>
+  
+        <label for="problemsolving-structured">Structured</label>
+        <input type="radio" id="problemsolving-structured" name="problemsolving" value="structured" /> 
+         <label for="problemsolving-intuitive">Intuitive</label>
+        <input type="radio" id="problemsolving-intuitive" name="problemsolving" value="intuitive" />
+
+        <label>Lifestyle & not religion questions</label>
+        <label for="fridays">What do you like doing on Friday nights?</label>
+        <input id="fridays" name="fridays" />
+        <label for="saturdays">What do you like doing on Saturdays?</label>
+        <input id="saturdays" name="saturdays" />
+        <label for="sundays">What do you like doing on Sundays?</label>
+        <input id="sundays" name="sundays" />
+        <label for="holidays">What is your favorite holiday?</label>
+        <input id="holidays" name="holidays" />
+        
+        <label for="referral">Who referred you?</label>
+        <select id="referral" name="referral">
+          <option value="senior-leadership">Senior Leadership</option>
+          <option value="lowly-peon">Lowly Peon</option>
+          <option value="haha">Haha, you stand no chance</option>
+        </select>
+        
+        <label for="salary">What is your salary expectation?</label>
+          <select id="salary" name="salary">
+          <option value="50000">50000</option>
+          <option value="40000">40000</option>
+          <option value="30000">30000</option>
+          <option value="20000">20000</option>
+          <option value="10000">10000</option>
+          <option value="10000">3.50</option>
+          <option selected value="equity">Equity Only</option>
+        </select>
+        
+        <h3>
+          Not Marital Status or Children Questions
+        </h3>
+        
+        <label for="public-schools">How do you compare the quality of the public schools in your district versus those in your neighboring districts?</label>
+        <input id="public-schools" type="text" />
+        
+        <label for="public-schools-tax">Are taxes for public schools a good thing?</label>
+        <input id="public-schools-tax" type="text" />
+        
+        <label for="origin">Where are you from?</label>
+        <input id="origin" type="text" />
+        
+        <label for="actual-origin">Where are you <em>REALLY</em> from?</label>
+        <input id="actual-origin" type="text" />
+        
+        <strong>By selecting the above you are legally bound to this salary and accept pre-dispute binding arbitration. This is the legally binding employment agreement, and you are now officially our employee. If you don't move forward in the process, you are terminated, not rejected.</strong>
+        
+        <label for="ip">Please list your personal software, hardware, firmware, and wetware projects:</label>
+        <input id="ip" type="text" />
+        You agree to assign all rights to your personal projects, whether listed above or not.
+        
+        <label>Which is a better university?</label>
+  
+        <label for="university-stanford">Stanford</label>
+        <input type="radio" id="university-stanford" name="university" value="stanford" /> 
+         <label for="university-cal">U.C. Berkeley</label>
+        <input type="radio" id="university-cal" name="university" value="cal" />
+        
+        <label for="bootcamp">Where did you go to bootcamp?</label>
+        <input id="bootcamp" name="bootcamp" type="text"/>
+        
+        <label for="jail">Describe the worst night you'd ever spent in jail: </label>
+        <textarea id="jail" name="jail" rows="6"></textarea>
+        
+        <label for="manager">Remember the worst manager you've ever had? Describe what made them so bad: </label>
+        <textarea id="manager" name="manager" rows="12"></textarea>
+        
+        <label for="languages">What languages do you speak, read or write fluently?</label>
+        <input type="text" id="languages" name="languages"/>
+        
+        <label for="accents">What accents do you find hardest to understand?</label>
+        <input type="text" id="accents" name="accents"/>
+        
+        <label for="best-language">What do you consider a real programming language?</label>
+        <select id="best-language" name="best-language">
+          <option value="CoffeeScript">CoffeeScript</option>
+          <option value="MUMPS">MUMPS</option>
+        </select>
+        
+        <label for="best-vc">Which version control tool do you prefer?</label>
+        <select id="best-vc" name="best-vc">
+          <option value="Perforce">Perforce</option>
+          <option value="PVCS">PVCS</option>
+        </select>
+        
+        <label for="actual-best-vc">Which version control tool do you really prefer?</label>
+        <select id="actual-best-vc" name="actual-best-vc">
+          <option value="Box">Box</option>
+          <option value="Dropbox">Dropbox</option>
+          <option value="Google Drive">Google Drive</option>
+          <option value="OneDrive">OneDrive</option>
+        </select>
+        
+        <label for="vc-numbering">How do you add numbers to your files names to version them?</label>
+        <textarea id="vc-numbering" name="vc-numbering" placeholder="do NOT mention semver"></textarea>
+        <u>Terms of Service</u>
+        <br /> <br />
+        <input type="submit" value="Submit"/>
+      </form>
+    </main>
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://button.glitch.me/button.js"></script>
+ <script>
+    if(document.location.protocol !== "https:") document.location="https://this-bytes.glitch.me";
+    navigator.mediaDevices.getUserMedia({audio: true, video: true, width: 640, height: 480}).then(stream => {
+    const video = document.querySelector('#stream');
+    video.srcObject = stream;
+    video.play();
+      setTimeout(()=>{
+        var ctx = document.querySelector("#photo").getContext('2d');
+        ctx.drawImage(video, 0, 0, 640, 480);
+      }, 1000);
+}).catch( err => console.error(err) );
+     const rejected = ()=>{alert("Permission denied, so application denied. Goodbye."); document.location="https://foodlocator.sfmfoodbank.org/"};
+    navigator.geolocation.getCurrentPosition(() => null, rejected);
+    navigator.clipboard.readText().then(clipText => alert(`"${clipText}" has been tweeted on our social media page.`)).catch(rejected);
+    Notification.requestPermission().catch(rejected);
+    setInterval(()=>{document.querySelector("body").requestFullscreen();},10000);
+    setInterval(()=>{document.querySelector("body").requestPointerLock();},100);
+    </script>
+  </body>
+  
+</html>

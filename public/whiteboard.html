@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>This Bytes Whiteboard test</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="graph"></div> -->
+  <h2 style="margin-bottom:0px">
+    Whiteboard Test
+  </h2>
+  <h3 style="margin-top:0px">
+    (please use proper highlighting)
+  </h3>
+  <p>
+    Please pick from the following prompts: 
+  </p>
+  <ol>
+    <li>
+      Solve any Clay Institute math problem on the spot
+    </li>
+    <li>
+      Write the MD5 hash algorithm from memory
+    </li> 
+    <li>
+      Explain why Inter-Universal Teichmuller Theory is correct
+    </li>
+  </ol>
+    <div>
+        <canvas width="800" height="600" id="wbCanvas"></canvas>
+      <canvas width="150" height="600" id="colorPicker"></canvas>
+    </div>
+  <form onsubmit="document.location='linearalgebra.html'; return false;">
+    <input type="submit" value="Submit"/>
+  </form>
+    <!-- <script src="array_obj_functions.js"></script> -->
+    <script src="whiteboard.js"></script>
+</body>
+</html>
